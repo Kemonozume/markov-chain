@@ -1,5 +1,5 @@
 (ns language
-  (:require [markov-chain.core :as markov]))
+  (:require [markov-chain.markov-chain :as markov]))
 
 (defn dickens-character-training-seq []
   (->> (slurp "resources/great_expectations_chapter_5.txt")
@@ -28,6 +28,7 @@
            (markov/generate-likeness 100))
        (reduce str ""))
 
+  (->> (markov/generate-likeness mc 100) (reduce str ""))
 
   ;; by words ;;;;;;
   ;; detect:

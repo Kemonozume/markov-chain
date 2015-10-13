@@ -1,4 +1,4 @@
-(ns markov-chain.core
+(ns markov-chain.markov-chain
   (:require [clojure.tools.logging :as log]
             [clojure.math.numeric-tower :as math]))
 

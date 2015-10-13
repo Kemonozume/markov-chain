@@ -15,7 +15,7 @@ After training a 3 layer MC on individual chars of Great Expectations, Chapter V
 > (detect-likeness mc mc-depth "a;lsjdfj lkeflh ashoe iofj")
 0.05896670169096736
 
-> (generate-likeness mc 100)
+> (->> (generate-likeness mc 100) (reduce str ""))
 "en to hoseliarefuld some wit'll. Joe an him ingitew and forns anceir
 mened preandied try hat ineve a"
 ```
@@ -29,7 +29,8 @@ book, without punctuation or caps:
 > (detect-likeness mc mc-depth (clojure.string/split "them room the i with to went" #"\s+"))
 0.0045216139294960095
 
-> " a juryman in some unlucky hour i resolved a word further without
+> (->> (markov/generate-likeness mc 100) (reduce str ""))
+" a juryman in some unlucky hour i resolved a word further without
 introducing estella s father would occasionally have some important
 bearing on the forehead hardens the brain into a general air and flavor
 about the same dim suggestion that i had tried hard at me but he really
