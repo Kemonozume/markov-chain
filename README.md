@@ -1,8 +1,7 @@
 # markov-chain
 
 This library implements an n level markov chain in Clojure. It can be
-trained on any sequence of data and detect if data is like it and can
-even generate similar data.
+trained on any sequence of data and detect likeness or even generate it.
 
 ## Usage
 
