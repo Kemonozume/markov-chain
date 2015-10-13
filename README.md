@@ -44,7 +44,7 @@ A little more training and it'll be ready to generate some high quality spam.
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Matt Parker
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
